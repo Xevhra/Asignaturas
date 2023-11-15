@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<campeonato>
+    <edicion>19</edicion>
+    <lugar>Club Deportivo Hípica Botafuegos, Algeciras</lugar>
+    <provincia>Cadiz</provincia>
+    <fechas>
+        <fechainicio>7/11</fechainicio>
+        <fechadmision>8</fechadmision>
+        <fechaenjuciamiento>9</fechaenjuciamiento>
+        <fechastand>10, 11, 12</fechastand>
+        <fechainaguracion>13</fechainaguracion>
+        <fechafin>16</fechafin>
+    </fechas>
+    <comiteOrganizador>
+        <miembro>
+            <nombre></nombre>
+            <lugarnacimiento></lugarnacimiento>
+            <dianacimiento>
+                <dia></dia>
+                <mes></mes>
+                <año></año>
+            </dianacimiento>
+            <correo></correo>
+        </miembro>
+    </comiteOrganizador>
+
+
+</campeonato>
