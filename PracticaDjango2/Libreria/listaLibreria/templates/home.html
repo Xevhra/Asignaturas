@@ -1,0 +1,16 @@
+<html>
+<body>    
+<h1>Lista de Libros</h1>
+<ul>
+ {% for book in books %}
+ <li><b>Author:</b> {{ book.author }} - <b>Title: </b> {{ book.title }} - <b>Rating</b> {{ book.rating }}
+    <p><a href="{% url 'description' pk=book.pk %}">Go in</a></p></li>
+ {% empty %}
+ <li>There's no books</li>    
+ {% endfor %}
+</ul>
+
+<h1>Añadir Libro</h1>
+<p><a href="{% url 'new' %}">Nuevo Comentario</a></p>
+</body>
+</html>
