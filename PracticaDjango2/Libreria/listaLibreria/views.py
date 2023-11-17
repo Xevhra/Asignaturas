@@ -1,6 +1,8 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponse
 from django.views import View
+from django.utils import timezone
+from django.views.generic import DetailView, ListView
 from .forms import TaskForm
 from .models import Libreria
 
@@ -26,13 +28,27 @@ class Book_description(View):
     def get(self, request, pk):
         books_ = get_object_or_404(Libreria, pk=pk)
         return render(request, self.template_description, {'books': books_})
+        
+        
+        
     
 class Book_edit(View):
-    template_description = 'editar.html'
+    template_edit = 'editar.html'
     
+
     def get(self, request, pk):
-        books_ = get_object_or_404(Libreria, pk=pk)
-        return render(request, self.template_description, {'books': books_})    
+        book = get_object_or_404(Libreria, pk=pk)
+        form = TaskForm(instance=book)
+        return render(request, self.template_edit, {'form': form, 'book': book})
+
+    def post(self, request, pk):
+        book = get_object_or_404(Libreria, pk=pk)
+        form = TaskForm(request.POST, instance=book)
+        if form.is_valid():
+            form.save()
+            return redirect('description', pk=book.pk)
+
+        return render(request, self.template_edit, {'form': form, 'book': book})
     
     
 class Book_new(View):

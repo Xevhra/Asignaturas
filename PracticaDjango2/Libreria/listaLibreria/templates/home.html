@@ -1,4 +1,5 @@
-<html>
+{% extends 'base.html' %} {% block content %}
+<!-- <html>
 <body>    
 <h1>Lista de Libros</h1>
 <ul>
@@ -11,6 +12,26 @@
 </ul>
 
 <h1>Añadir Libro</h1>
-<p><a href="{% url 'new' %}">Nuevo Comentario</a></p>
+<p><a href="{% url 'new' %}">Nuevo Libro</a></p>
 </body>
-</html>
+</html> -->
+
+
+<h3>Lista de libros</h3>
+
+ {% for book in books %}
+<article><b>Author:</b> {{ book.author }} - <b>Title: </b> {{ book.title }} - <b>Rating</b> {{ book.rating }}
+</br>
+   <a href="{% url 'description' pk=book.pk %}" role="button">Go in</a></article>
+ {% empty %}
+There's no books   
+ {% endfor %}
+
+
+<h1>Añadir Libro</h1>
+<p><a href="{% url 'new' %}">Nuevo Libro</a></p>
+
+
+{% endblock %}
+
+
