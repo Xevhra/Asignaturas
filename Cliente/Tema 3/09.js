@@ -34,3 +34,7 @@ function procesarDatos() {
         console.log('La segunda fecha es mayor');
     }
 }
+
+/* Comentario 1*/
+/* Comentario 2*/
+/* Comentario 3 */
