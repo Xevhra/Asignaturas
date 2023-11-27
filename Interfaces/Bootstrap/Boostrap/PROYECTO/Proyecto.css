@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');
+
+body  h2, h3, h4 {
+    font-family: 'Raleway', sans-serif;
+    color: #149DDD;
+}
+
+ul {
+    list-style-image: url('./flecha-correcta.png');
+}
+
+
+
+.Header p {
+    font-family: sans-serif;
+    color: #F4F4F4;
+}
+
+
+
+
+.Barra_Superior {
+    display: flex;
+    justify-content: space-between;
+}
+
