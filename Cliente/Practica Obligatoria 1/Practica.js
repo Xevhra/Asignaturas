@@ -1,3 +1,9 @@
+/* 1. Se almacenarán los siguientes datos de los clientes: dniCliente, nombre y apellidos.
+El campo usuario será completo en minúsculo compuesto por la inicial del nombre,
+las tres primeras letras del primer apellido, las tres primeras del segundo apellido y
+los tres últimos dígitos del DNI.*/
+
+
 class Cliente {
     _dnicliente;
     _nombre;
@@ -110,4 +116,22 @@ class Coche extends Vehiculo {
     set plazas(value) {
         return this._plazas = value;
     }
+}
+
+class Agencia {
+    _clientes;
+    _alquileres;
+    _vehiculos;
+
+
+    get clientes() {
+        return this._clientes;
+    }
+    set clientes(value) {
+        this._clientes = value;
+    }
+
+
+
+
 }
