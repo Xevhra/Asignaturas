@@ -1,0 +1,42 @@
+.body {
+  margin: 0 !important;
+  padding: 0;
+  width: 100%;
+}
+
+.cuerpo {
+  width: 100%;
+  margin: 0;
+  padding: 10;
+}
+
+.cabecera {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #b6fffa;
+  position: fixed;
+  top: 0%;
+  margin: 0 auto; /* Asegura que no hay margen en la cabecera */
+}
+
+.logo {
+  display: flex;
+  margin-left: 20px;
+}
+
+.menu {
+  display: flex;
+  margin-right: 20px; /* Ajusta el margen derecho según sea necesario */
+}
+
+.opcion {
+  margin-left: 20px;
+  align-content: space-around;
+}
+
+.opcion a {
+  color: rgb(220, 13, 13);
+  text-decoration: none;
+  font-family: "Trebuchet MS";
+}
