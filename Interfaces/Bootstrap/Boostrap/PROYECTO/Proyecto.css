@@ -16,11 +16,19 @@ ul {
     color: #F4F4F4;
 }
 
-
-
-
 .Barra_Superior {
     display: flex;
     justify-content: space-between;
 }
 
+.IconoInferior {
+    width: 36px;
+    height: 36px;
+}
+
+.Underline {
+    border: 3px solid darkblue;
+    border-radius: 5px;
+    width: 50px;
+    height: 4px;
+}
