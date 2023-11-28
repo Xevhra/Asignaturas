@@ -9,14 +9,30 @@ ul {
     list-style-image: url('./flecha-correcta.png');
 }
 
+.imagen_fondo{
+    background-image: url(./hero-bg.jpeg);
+    height: 100vh;
+    background-size: cover;}
 
 
-.Header p {
+    .titulo_fondo h1 {
+        font-family: sans-serif;
+        color: white;
+    }
+
+
+.titulo_fondo p {
     font-family: sans-serif;
     color: #F4F4F4;
+    border-bottom:#149DDD 4px solid;
 }
 
 .Barra_Superior {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
     display: flex;
     justify-content: space-between;
 }
@@ -32,3 +48,14 @@ ul {
     width: 50px;
     height: 4px;
 }
+
+.lineaLateral {
+    border-left: 3px solid #149DDD;
+    padding: 5px;
+}
+
+.probando {
+    background-color:rgb(33, 34, 34);
+}
+
+
