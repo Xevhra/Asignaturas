@@ -59,7 +59,22 @@ ul {
 }
 
 .colorBoton {
-    background-color:#149DDD !important;
+    background-color:#149DDD!important;
+}
+
+.menuLateralsvg:hover svg{
+    fill: #139ddc;
+} 
+
+
+
+.menuLateral a {
+    text-decoration: none;
+}
+
+.menuLateral:hover a{
+    color: #139ddc;
+    
 }
 
 
