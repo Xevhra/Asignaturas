@@ -8,7 +8,7 @@ class Cliente {
         this._dniCliente = dniCliente;
         this._nombre = nombre;
         this._apellidos = apellidos;
-        this._usuario = usuario;
+        this._usuario = this.rellenaUsuario();
     }
 
     get dniCliente() {
@@ -55,13 +55,19 @@ los tres últimos dígitos del DNI. */
         return usuarioAsignado;
     }
 
+    altaCliente() {
+        
+        
+
+    }
+
 
     toHTMLRow() {
         let fila = "<tr>";
             fila += "<td>" + this.dniCliente + "</td>";
             fila += "<td>" + this.nombre + "</td>";
             fila += "<td>" + this.apellidos + "</td>";
-            fila += "<td>" + this.usuario + "</td></tr>";
+            fila += "<td>" + this.usuarioAsignado + "</td></tr>";
         return fila;
     }
 }
@@ -118,7 +124,7 @@ class Vehiculo {
     }
 }
 
-class Vehiculo extends Motocicleta {
+class Motocicleta extends Vehiculo {
     _ciclomotor;
 
     constructor(matricula,modelo,marca,ciclomotor) {
@@ -176,6 +182,9 @@ class Coche extends Vehiculo {
 
     compruebaMatricula() {
         /* Aqui comprobamos que no tenga la misma matricula que otro vehiculo ya introducido */
+        // if()
+
+        
     }
     
 }
